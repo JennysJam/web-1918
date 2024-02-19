@@ -7,12 +7,14 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <script src='main.js' defer></script>
 </head>
 
 <body>
     <h1>1918 HTML5</h1>
-    <canvas width="300" height="400"></canvas>
+    <canvas width="300" height="400" id="main-canvas">
+        <p>Your platform does not support Canvas, please switch to one that does.</p>
+    </canvas>
 </body>
 
 </html>

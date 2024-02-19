@@ -4,6 +4,16 @@ html {
 }
 
 body {
-    width: 800px;
+    margin: 0 auto;
+    width: 650px;
     max-width: 80%;
+    text-align: center;
+}
+
+canvas#main-canvas {
+    background-color: #ffebcd;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border: 1px normal #ffebcd;
+    border-radius: 1rem;
 }
