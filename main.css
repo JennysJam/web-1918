@@ -10,10 +10,74 @@ body {
     text-align: center;
 }
 
+p,
+li,
+dl,
+blockquote {
+    text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 0;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid #453620;
+}
+
+code,
+samp,
+time {
+    background-color: #CCB48F;
+    border-radius: 1rem;
+    padding: 2.5px 5px;
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+pre>code,pre>samp {
+    text-align: left;
+    display: block;
+    overflow-x: auto;
+    background-color: #CCB48F;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    font-family: monospace;
+}
+kbd {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #66491F;
+    width: 90%;
+}
+
 canvas#main-canvas {
     background-color: #ffebcd;
     margin: 0 auto;
     padding: 0.5rem;
     border: 1px normal #ffebcd;
+    border-radius: 1rem;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+legend {
+    border: 2px solid #453620;
     border-radius: 1rem;
 }
