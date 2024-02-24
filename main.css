@@ -37,7 +37,17 @@ hr {
     width: 90%;
 }
 
-nav {}
+/* navbar */
+nav ul,
+nav ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ul li,
+nav ol li {
+    display: inline-block;
+}
 
 /* text */
 blockquote {
@@ -45,6 +55,11 @@ blockquote {
     margin-left: 1rem;
     padding-left: 1rem;
     border-left: 3px solid #453620;
+}
+
+sub,
+sup {
+    font-size: 0.8rem;
 }
 
 a {
@@ -100,6 +115,10 @@ img {
     margin: 0 auto;
     width: 100%;
     max-width: 600px;
+}
+
+figcaption {
+    text-align: center;
 }
 
 /* tables and layouts */
