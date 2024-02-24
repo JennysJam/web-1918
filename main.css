@@ -1,31 +1,45 @@
+/* set up variables */
+:root {
+    --bg-color: #FFF5E6;
+    --font-color: #453620;
+    --border-color: #453620;
+    --code-bg-color: #CCB48F;
+    --emphasis-color: #D4CCBF;
+    --blue-dark: #203545;
+}
+
+/* core html body setup setup */
 html {
     background-color: #FFF5E6;
-    color: #453620
+    color: #453620;
+    font-family: sans-serif;
 }
 
 body {
-    margin: 0 auto;
+    margin: 1rem auto;
     width: 650px;
     max-width: 80%;
     text-align: center;
 }
 
-p,
-li,
-dl,
-blockquote {
-    text-align: justify;
+body>* {
+    text-align: left;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: bold;
+header,
+footer {
+    text-align: center;
 }
 
+hr {
+    border: 0;
+    border-top: 2px solid #66491F;
+    width: 90%;
+}
+
+nav {}
+
+/* text */
 blockquote {
     margin: 0;
     margin-left: 1rem;
@@ -33,6 +47,11 @@ blockquote {
     border-left: 3px solid #453620;
 }
 
+a {
+    color: var(--blue-dark);
+}
+
+/* code and pre-formatted input */
 code,
 samp,
 time {
@@ -43,7 +62,8 @@ time {
     font-family: monospace;
 }
 
-pre>code,pre>samp {
+pre>code,
+pre>samp {
     text-align: left;
     display: block;
     overflow-x: auto;
@@ -52,17 +72,19 @@ pre>code,pre>samp {
     padding: 0.5rem 1rem;
     font-family: monospace;
 }
+
 kbd {
     text-align: left;
     font-size: 1rem;
     font-weight: bold;
 }
 
-hr {
-    border: 0;
-    border-top: 2px solid #66491F;
-    width: 90%;
+var {
+    font-family: serif;
 }
+
+/**/
+
 
 canvas#main-canvas {
     background-color: #ffebcd;
@@ -72,12 +94,45 @@ canvas#main-canvas {
     border-radius: 1rem;
 }
 
+/* image content */
 img {
     display: block;
     margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
 }
 
-legend {
-    border: 2px solid #453620;
-    border-radius: 1rem;
+/* tables and layouts */
+table {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+th {
+    border-bottom: 2px solid var(--border-color);
+}
+
+td,
+th {
+    padding: 0.25rem 0.25rem;
+    text-align: center;
+    ;
+}
+
+tr:nth-child(even) td {
+    background-color: var(--emphasis-color);
+}
+
+tfoot>td,
+tfoot>tr {
+    border-top: 1px solid var(--border-color);
+}
+
+table>caption {
+    font-style: italic;
+}
+
+footer {
+    font-size: 0.9rem;
 }
